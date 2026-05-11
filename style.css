@@ -339,7 +339,7 @@ nav{
         flex-direction: column;
     }
 
-     .contact-content .flex-contact div{
+    .contact-content .flex-contact div{
         width: 100%;
     }
 }
@@ -415,9 +415,9 @@ nav{
         padding: 30px 20px;
     }
 
-     .contact-content h2{
+    .contact-content h2{
         font-size: 30px;
-     }
+    }
 }
 
 /* SMALL MOBILE */
