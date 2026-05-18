@@ -278,11 +278,62 @@ nav{
     line-height: 1.7;
 }
 
+/* OUR TEAM SECTION */
+.team-section{
+    width: 100%;
+    padding: 100px 7%;
+    background-color: #f5f5f5;
+}
+.team-content{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+
+    background-color: white;
+    padding: 50px;
+    border-radius: 15px;
+
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+.team-content h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #061d2b;
+    text-align: center;
+}
+.team-content p{
+    line-height: 1.8;
+    color: #333;
+    text-align: center;
+}
+.team-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 40px;
+}
+/* Team member */
+.team-member {
+    flex: 1;
+    text-align: center;
+}
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.team-member h3 {
+    color: #061d2b;
+}
+.team-member p {
+    color: #555;
+    line-height: 1.7;
+}
 /* CONTACT SECTION */
 .contact-section{
     width: 100%;
     padding: 100px 7%;
-    background-color: #f5f5f5;
+    background-color: #061d2b;
 }
 .contact-content{
     width: 100%;
@@ -331,7 +382,7 @@ nav{
     transition: 0.3s;
 }
 .contact-content form button:hover{
-    background-color: #00bfff;
+    background-color: #033b5d;
 }
 .contact-content form button:active{
     transform: scale(0.98);
@@ -410,6 +461,17 @@ nav{
     .contact-content .flex-contact div{
         width: 100%;
     }
+
+    /* OUR TEAM SECTION */
+    .team-container{
+        flex-direction: column;
+    }
+
+     .team-member {
+        width: 100%;
+        max-width: 300px;
+        margin: auto;
+    }
 }
 
 /* MOBILE RESPONSIVENESS */
@@ -486,6 +548,11 @@ nav{
     .contact-content h2{
         font-size: 30px;
     }
+
+    /* OUR TEAM SECTION */
+    .team-content{
+        padding: 30px 20px;
+    }
 }
 
 /* SMALL MOBILE */
@@ -516,5 +583,10 @@ nav{
     /* CONTACT SECTION */
     .contact-content form button{
         font-size: 14px;
+    }
+
+    /* OUR TEAM SECTION */
+    .team-member {
+        max-width: 250px;
     }
 }
