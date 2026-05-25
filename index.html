@@ -5,247 +5,206 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abek Systems</title>
 
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- Boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
+
 <body>
-<div id="toast-container" class="toast-container"></div>
 
-<!-- ================= HOME SECTION ================= -->
-<section class="home-section" id="home">
+    <div id="toast-container" class="toast-container"></div>
 
-    <!-- NAVBAR -->
-    <nav>
-        <div class="logo">
-            <img src="images/ABEK_logo.png" alt="">
-        </div>
+    <!-- HOME -->
+    <section class="home-section" id="home">
 
-        <!-- MENU ICON -->
-        <div class="menu-icon" id="menu-icon">
-            <i class='bx bx-menu'></i>
-        </div>
-
-        <!-- NAV LINKS -->
-        <ul class="nav-links" id="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- HOME CONTENT -->
-    <div class="home-content">
-
-        <div class="home-info">
-            <h1>Welcome to Abek Systems</h1>
-
-            <p>
-                Your trusted partner in technology solutions.
-                We provide innovative and reliable IT services
-                to help your business thrive in the digital age.
-            </p>
-
-            <a href="#services" class="btn">
-                Explore Our Services
-            </a>
-        </div>
-
-        <div class="home-img">
-            <img src="images/IT2.png" alt="">
-        </div>
-
-    </div>
-</section>
-
-<!-- ================= ABOUT SECTION ================= -->
-<section class="about-section" id="about">
-
-    <div class="about-content">
-
-        <h2>About Us</h2>
-
-        <p>
-            ABEK Systems Ltd is a forward-thinking technology company
-            incorporated in Nigeria under the Companies and Allied Matters
-            Act, 2020. We deliver innovative, scalable, and sustainable
-            solutions tailored to the needs of businesses, institutions,
-            and government organisations.
-        </p>
-
-        <h3>Our Vision</h3>
-
-        <p>
-            To become a leading technology-driven company in Africa,
-            transforming industries and improving lives.
-        </p>
-
-        <h3>Our Mission</h3>
-
-        <p>
-            To deliver high-quality, efficient, and customer-focused
-            technological solutions through innovation and professionalism.
-        </p>
-
-    </div>
-
-</section>
-
-<!-- ================= SERVICES SECTION ================= -->
-<section class="services-section" id="services">
-
-    <div class="services-content">
-        <h2>Our Services</h2>
-        <p>
-            We offer a wide range of technology services
-            to meet your business needs.
-        </p>
-    </div>
-
-    <div class="services-grid">
-
-        <div class="grid-item">
-            <img src="images/software development.png" alt="icon">
-            <h3>Software Development</h3>
-            <p>
-                Custom software solutions tailored to your
-                business requirements.
-            </p>
-        </div>
-
-        <div class="grid-item">
-            <img src="images/it consulting icon.png" alt="icon">
-            <h3>IT Consulting</h3>
-            <p>
-                Expert advice to help you navigate
-                the complex world of technology.
-            </p>
-        </div>
-
-        <div class="grid-item">
-            <img src="images/Cloud_services.png" alt="icon">
-            <h3>Cloud Services</h3>
-            <p>
-                Scalable cloud solutions to enhance
-                your business operations.
-            </p>
-        </div>
-
-        <div class="grid-item">
-            <img src="images/Digital Marketing.jpg" alt="icon">
-            <h3>Digital Marketing</h3>
-            <p>
-                Strategic marketing solutions to boost
-                your online presence.
-            </p>
-        </div>
-
-        <div class="grid-item">
-            <img src="images/IT_Support.png" alt="icon">
-            <h3>IT Support</h3>
-            <p>
-                Reliable technical support to keep
-                your systems running smoothly.
-            </p>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- ================= OUR TEAM SECTION ================= -->
-<section class="team-section">
-    <!-- Section Title -->
-    <div class="team-content">
-        <h2>Our Team</h2>
-        <p>
-            Passionate professionals dedicated to delivering excellence and innovation.
-        </p>
-    </div>
-
-    <!-- Team Container -->
-    <div class="team-container">
-
-        <!-- Team Member 1 -->
-        <div class="team-member">
-            <img src="images/Nwiabu.jpg" alt="Team Member 1">
-            <h3>Prof. Nuka Nwiabu</h3>
-            <p>Managing Director</p>
-        </div>
-        <!-- Team Member 2 -->
-        <div class="team-member">
-            <img src="images/Godwin.jpeg" alt="Team Member 2">
-            <h3>Godwin George</h3>
-            <p>Operation Manager</p>
-        </div>
-        <!-- Team Member 3 -->
-        <div class="team-member">
-            <img src="images/princewill.jpg" alt="Team Member 3">
-            <h3>Princewill Monday</h3>
-            <p>IT Specialist</p>
-        </div>
-        <!-- Team Member 4 -->
-        <div class="team-member">
-            <img src="images/Johnson.jpg" alt="Team Member 4">
-            <h3>Eseabasi Johnson</h3>
-            <p>IT Specialist</p>
-        </div>
-    </div>
-</section>
-
-<!-- ================= CONTACT SECTION ================= -->
-<section class="contact-section" id="contact">
-
-    <div class="contact-content">
-        <h2>Contact Us</h2>
-        <p>
-            Have questions or want to learn more about our services?
-            Get in touch with us today.
-        </p>
-        
-        <form id="contactForm">
-            <div class="form-group">
-                <input type="text" name="name" placeholder="Your Name" required>
-            </div>
-            <div class="form-group">
-                <input type="email" name="email" placeholder="Your Email" required>
-            </div>
-            <div class="form-group">
-                <textarea name="message" placeholder="Your Message" required></textarea>
-            </div>
-            <button type="submit" class="btn">Send Message</button>
-            <div id="formResponse" class="form-response"></div>
-        </form>
-
-        <div class="flex-contact">
-            <div>
-                <img src="images/whatsapp-5-64.png" alt="whatsapp-icon">
-                <p>+234 815 469 1290</p>
+        <nav>
+            <div class="logo">
+                <img src="images/ABEK_logo.png" alt="">
             </div>
 
-            <div>
-                <img src="images/location-pin-thin-64.png" alt="location-icon">
-                <p>30 Abacha Road, GRA, Port Harcourt, Nigeria</p>
+            <div class="menu-icon" id="menu-icon">
+                <i class='bx bx-menu'></i>
             </div>
-            <div>
-                <img src="images/mail-thin-64.png" alt="envelope-icon">
-                <p>info@abeksystems.com</p>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="home-content">
+            <div class="home-info">
+                <h1>Welcome to</h1>
+                <h1 id="company-name">Abek Systems</h1>
+
+                <p>
+                    Your trusted partner in technology solutions.
+                    We provide innovative and reliable IT services.
+                </p>
+
+                <a href="#services" class="btn">Explore Our Services</a>
+            </div>
+
+            <div class="home-img">
+                <img src="images/landingIMG.png" alt="">
             </div>
         </div>
+    </section>
 
-        <!-- footer -->
-        <div class="footer">
-            <p>&copy; 2026 Abek Systems Ltd. All rights reserved.</p>
+    <!-- ABOUT -->
+    <section class="about-section" id="about">
+        <div class="about-content">
+            <h2>About Us</h2>
+
+            <p>
+                ABEK Systems Ltd delivers innovative and scalable solutions
+                for businesses and institutions in Nigeria.
+            </p>
+
+            <h3>Our Vision</h3>
+            <p>To become a leading technology-driven company in Africa.</p>
+
+            <h3>Our Mission</h3>
+            <p>To deliver high-quality, customer-focused technological solutions.</p>
         </div>
-    </div>
+    </section>
 
-</section>
+    <!-- SERVICES -->
+    <section class="services-section" id="services">
 
-<!-- JS source -->
-<script src="index.js"></script>
+        <div class="services-content">
+            <h2>Our Services</h2>
+            <p>We offer a wide range of technology services.</p>
+        </div>
+
+        <div class="services-grid">
+
+            <div class="grid-item">
+                <img src="images/software development.png">
+                <h3>Software Development</h3>
+                <p>Custom software solutions.</p>
+            </div>
+
+            <div class="grid-item">
+                <img src="images/it consulting icon.png">
+                <h3>IT Consulting</h3>
+                <p>Expert technology advice.</p>
+            </div>
+
+            <div class="grid-item">
+                <img src="images/Cloud_services.png">
+                <h3>Cloud Services</h3>
+                <p>Scalable cloud solutions.</p>
+            </div>
+
+            <div class="grid-item">
+                <img src="images/Digital Marketing.jpg">
+                <h3>Digital Marketing</h3>
+                <p>Boost your online presence.</p>
+            </div>
+
+            <div class="grid-item">
+                <img src="images/IT_Support.png">
+                <h3>IT Support</h3>
+                <p>Reliable technical support.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="team-section">
+        <div class="team-content">
+            <h2>Our Team</h2>
+            <p>Dedicated professionals driving innovation.</p>
+        </div>
+
+        <div class="team-container">
+
+            <div class="team-member">
+                <img src="images/Nwiabu.jpg">
+                <h3>Prof. Nuka Nwiabu</h3>
+                <p>Managing Director</p>
+            </div>
+
+            <div class="team-member">
+                <img src="images/Godwin.jpeg">
+                <h3>Godwin George</h3>
+                <p>Operations Manager</p>
+            </div>
+
+            <div class="team-member">
+                <img src="images/princewill.jpg">
+                <h3>Princewill Monday</h3>
+                <p>IT Specialist</p>
+            </div>
+
+            <div class="team-member">
+                <img src="images/Johnson.jpg">
+                <h3>Eseabasi Johnson</h3>
+                <p>IT Specialist</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT (UPDATED FOR FLOATING LABEL + TYPING PLACEHOLDER) -->
+    <section class="contact-section" id="contact">
+
+        <div class="contact-content">
+
+            <h2>Contact Us</h2>
+            <p>Get in touch with us today.</p>
+
+            <form id="contactForm">
+
+                <div class="input-group">
+                    <input type="text" name="name" required data-placeholder="Your full name">
+                    <label>Your Name</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="email" name="email" required data-placeholder="you@example.com">
+                    <label>Your Email</label>
+                </div>
+
+                <div class="input-group">
+                    <textarea name="message" required data-placeholder="Tell us how we can help you"></textarea>
+                    <label>Your Message</label>
+                </div>
+
+                <button type="submit">Send Message</button>
+
+                <div id="formResponse"></div>
+            </form>
+
+            <div class="flex-contact">
+                <div>
+                    <img src="images/whatsapp-5-64.png">
+                    <p>+234 815 469 1290</p>
+                </div>
+
+                <div>
+                    <img src="images/location-pin-thin-64.png">
+                    <p>Port Harcourt, Nigeria</p>
+                </div>
+
+                <div>
+                    <img src="images/mail-thin-64.png">
+                    <p>info@abeksystems.com</p>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>&copy; 2026 Abek Systems Ltd</p>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="index.js"></script>
 
 </body>
 </html>
