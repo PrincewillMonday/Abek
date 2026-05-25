@@ -150,7 +150,7 @@
         </div>
     </section>
 
-    <!-- CONTACT -->
+    <!-- CONTACT (UPDATED FOR FLOATING LABEL + TYPING PLACEHOLDER) -->
     <section class="contact-section" id="contact">
 
         <div class="contact-content">
@@ -161,17 +161,17 @@
             <form id="contactForm">
 
                 <div class="input-group">
-                    <input type="text" name="name" required>
+                    <input type="text" name="name" required data-placeholder="Your full name">
                     <label>Your Name</label>
                 </div>
 
                 <div class="input-group">
-                    <input type="email" name="email" required>
+                    <input type="email" name="email" required data-placeholder="you@example.com">
                     <label>Your Email</label>
                 </div>
 
                 <div class="input-group">
-                    <textarea name="message" required></textarea>
+                    <textarea name="message" required data-placeholder="Tell us how we can help you"></textarea>
                     <label>Your Message</label>
                 </div>
 
@@ -205,5 +205,6 @@
     </section>
 
     <script src="index.js"></script>
-    </body>
+
+</body>
 </html>
