@@ -159,10 +159,24 @@
             <p>Get in touch with us today.</p>
 
             <form id="contactForm">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
+
+                <div class="input-group">
+                    <input type="text" name="name" required>
+                    <label>Your Name</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="email" name="email" required>
+                    <label>Your Email</label>
+                </div>
+
+                <div class="input-group">
+                    <textarea name="message" required></textarea>
+                    <label>Your Message</label>
+                </div>
+
                 <button type="submit">Send Message</button>
+
                 <div id="formResponse"></div>
             </form>
 
