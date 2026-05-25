@@ -11,9 +11,10 @@
 body{
     width: 100%;
     overflow-x: hidden;
+    padding-top: 80px;
 }
 
-/* TOAST NOTIFICATION */
+/* ================= TOAST NOTIFICATION ================= */
 .toast-container {
     position: fixed;
     top: 100px;
@@ -59,8 +60,19 @@ body{
     }
 }
 
-/* HOME SECTION */
+/* ================= SCROLL REVEAL ================= */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
 
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ================= HOME SECTION ================= */
 .home-section{
     width: 100%;
     min-height: 100vh;
@@ -69,7 +81,6 @@ body{
 }
 
 /* NAVBAR */
-
 nav{
     width: 100%;
     height: 80px;
@@ -86,16 +97,14 @@ nav{
     background-color: #061d2b;
     z-index: 1000;
 }
-.home-content{
-    padding-top: 100px;
-}
 
 .logo img{
     width: 70px;
     margin-top: 5px;
-    filter: brightness(0) invert(1);
+    filter: brightness(0) saturate(100%) invert(62%) sepia(98%) saturate(2200%) hue-rotate(165deg) brightness(101%) contrast(101%);
 }
 
+/* NAV LINKS */
 .nav-links{
     display: flex;
     list-style: none;
@@ -115,7 +124,6 @@ nav{
 }
 
 /* MENU ICON */
-
 .menu-icon{
     display: none;
     color: white;
@@ -124,7 +132,6 @@ nav{
 }
 
 /* HOME CONTENT */
-
 .home-content{
     width: 100%;
     min-height: calc(100vh - 80px);
@@ -142,7 +149,11 @@ nav{
 .home-info h1{
     font-size: 55px;
     color: white;
-    margin-bottom: 20px;
+}
+
+.home-info h1#company-name{
+    color: #00bfff;
+    margin-bottom: 25px;
 }
 
 .home-info p{
@@ -155,14 +166,11 @@ nav{
 .btn{
     display: inline-block;
     padding: 12px 25px;
-
     background-color: white;
     color: #061d2b;
-
     text-decoration: none;
     border-radius: 5px;
     font-weight: 600;
-
     transition: 0.3s;
 }
 
@@ -174,7 +182,6 @@ nav{
 
 .home-img{
     flex: 1;
-
     display: flex;
     justify-content: center;
 }
@@ -184,8 +191,7 @@ nav{
     max-width: 500px;
 }
 
-/* ABOUT SECTION */
-
+/* ================= ABOUT ================= */
 .about-section{
     width: 100%;
     padding: 100px 7%;
@@ -193,14 +199,11 @@ nav{
 }
 
 .about-content{
-    width: 100%;
     max-width: 1100px;
     margin: auto;
-
     background-color: white;
     padding: 50px;
     border-radius: 15px;
-
     box-shadow: 0 8px 16px rgba(0,0,0,0.1);
 }
 
@@ -222,8 +225,7 @@ nav{
     color: #333;
 }
 
-/* SERVICES SECTION */
-
+/* ================= SERVICES ================= */
 .services-section{
     width: 100%;
     padding: 100px 7%;
@@ -250,11 +252,8 @@ nav{
     background-color: white;
     padding: 30px 20px;
     border-radius: 15px;
-
     text-align: center;
-
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-
     transition: 0.3s;
 }
 
@@ -278,91 +277,99 @@ nav{
     line-height: 1.7;
 }
 
-/* OUR TEAM SECTION */
+/* ================= TEAM ================= */
 .team-section{
     width: 100%;
     padding: 100px 7%;
     background-color: #f5f5f5;
 }
+
 .team-content{
-    width: 100%;
     max-width: 1100px;
     margin: auto;
-
     background-color: white;
     padding: 50px;
     border-radius: 15px;
-
     box-shadow: 0 8px 16px rgba(0,0,0,0.1);
 }
+
 .team-content h2{
     font-size: 40px;
     margin-bottom: 20px;
     color: #061d2b;
     text-align: center;
 }
+
 .team-content p{
-    line-height: 1.8;
-    color: #333;
     text-align: center;
+    color: #333;
+    line-height: 1.8;
 }
+
+/* FIXED TEAM GRID */
 .team-container {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 30px;
     margin-top: 40px;
 }
-/* Team member */
-.team-member {
-    flex: 1;
+
+.team-member{
     text-align: center;
 }
-.team-member img {
+
+.team-member img{
     width: 100%;
+    height: 250px;
+    object-fit: cover;
     border-radius: 50%;
     margin-bottom: 20px;
 }
-.team-member h3 {
+
+.team-member h3{
     color: #061d2b;
 }
-.team-member p {
+
+.team-member p{
     color: #555;
-    line-height: 1.7;
 }
-/* CONTACT SECTION */
+
+/* ================= CONTACT ================= */
 .contact-section{
     width: 100%;
     padding: 100px 7%;
     background-color: #061d2b;
 }
+
 .contact-content{
-    width: 100%;
     max-width: 800px;
     margin: auto;
-
     background-color: white;
     padding: 50px;
     border-radius: 15px;
-
     box-shadow: 0 8px 16px rgba(0,0,0,0.1);
 }
+
 .contact-content h2{
     font-size: 40px;
     margin-bottom: 20px;
     color: #061d2b;
     text-align: center;
 }
+
 .contact-content p{
-    line-height: 1.8;
-    color: #333;
     text-align: center;
+    color: #333;
 }
+
+/* FORM */
 .contact-content form{
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
+
 .contact-content form input,
 .contact-content form textarea{
     width: 100%;
@@ -371,6 +378,7 @@ nav{
     border-radius: 5px;
     font-size: 16px;
 }
+
 .contact-content form button{
     padding: 12px;
     background-color: #061d2b;
@@ -379,40 +387,20 @@ nav{
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-    transition: 0.3s;
 }
+
 .contact-content form button:hover{
     background-color: #033b5d;
 }
-.contact-content form button:active{
-    transform: scale(0.98);
-}
-.form-response{
-    margin-top: 15px;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 14px;
-    text-align: center;
-    display: none;
-}
-.form-response.success{
-    display: block;
-    background-color: #d4edda;
-    color: #155724;
-    border: 1px solid #c3e6cb;
-}
-.form-response.error{
-    display: block;
-    background-color: #f8d7da;
-    color: #721c24;
-    border: 1px solid #f5c6cb;
-}
+
+/* FLEX CONTACT */
 .contact-content .flex-contact{
     display: flex;
     justify-content: space-between;
     gap: 20px;
     margin-top: 40px;
 }
+
 .contact-content .flex-contact div{
     flex: 1;
     background-color: #f0f0f0;
@@ -420,65 +408,43 @@ nav{
     border-radius: 10px;
     text-align: center;
 }
+
 .contact-content .flex-contact div img{
     width: 40px;
     margin-bottom: 10px;
 }
+
 .contact-content .flex-contact div p{
-    color: #333;
     font-size: 13px;
+    color: #333;
 }
-.contact-content .footer{
+
+/* FOOTER */
+.footer{
     margin-top: 40px;
     text-align: center;
     color: #555;
     font-size: 14px;
 }
 
-/* TABLET RESPONSIVENESS */
-
+/* ================= RESPONSIVE ================= */
 @media(max-width: 992px){
 
     .home-content{
         flex-direction: column;
         text-align: center;
-        padding-top: 50px;
-    }
-
-    .home-info h1{
-        font-size: 45px;
     }
 
     .services-grid{
         grid-template-columns: repeat(2, 1fr);
     }
 
-    /* CONTACT SECTION */
     .contact-content .flex-contact{
         flex-direction: column;
     }
-
-    .contact-content .flex-contact div{
-        width: 100%;
-    }
-
-    /* OUR TEAM SECTION */
-    .team-container{
-        flex-direction: column;
-    }
-
-     .team-member {
-        width: 100%;
-        max-width: 300px;
-        margin: auto;
-    }
 }
 
-/* MOBILE RESPONSIVENESS */
-
 @media(max-width: 768px){
-
-    /* NAVBAR */
 
     .menu-icon{
         display: block;
@@ -489,16 +455,12 @@ nav{
         position: fixed;
         top: 0;
         right: -100%;
-
         width: 250px;
         height: 100vh;
-
         background-color: #08293d;
-
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
         transition: 0.4s;
     }
 
@@ -506,87 +468,29 @@ nav{
         right: 0;
     }
 
-    .nav-links li{
-        margin: 20px 0;
-    }
-
-    /* HOME */
-
-    .home-info h1{
-        font-size: 35px;
-    }
-
-    .home-info p{
-        font-size: 16px;
-    }
-
-    .home-img img{
-        max-width: 350px;
-    }
-
-    /* ABOUT */
-
-    .about-content{
-        padding: 30px 20px;
-    }
-
-    .about-content h2{
-        font-size: 30px;
-    }
-
-    /* SERVICES */
-
     .services-grid{
         grid-template-columns: 1fr;
     }
 
-    /* CONTACT SECTION */
+    .about-content,
+    .team-content,
     .contact-content{
-        padding: 30px 20px;
-    }
-
-    .contact-content h2{
-        font-size: 30px;
-    }
-
-    /* OUR TEAM SECTION */
-    .team-content{
         padding: 30px 20px;
     }
 }
 
-/* SMALL MOBILE */
-
 @media(max-width: 480px){
-
-    nav{
-        padding: 0 10px;
-    }
-
-    .logo img{
-        width: 60px;
-    }
 
     .home-info h1{
         font-size: 28px;
     }
 
     .btn{
-        padding: 10px 18px;
         font-size: 14px;
+        padding: 10px 18px;
     }
 
     .home-img img{
         max-width: 280px;
-    }
-
-    /* CONTACT SECTION */
-    .contact-content form button{
-        font-size: 14px;
-    }
-
-    /* OUR TEAM SECTION */
-    .team-member {
-        max-width: 250px;
     }
 }
